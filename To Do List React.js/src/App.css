@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0px;
+}
+.container{
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px #dbdbdb;
+  margin: 0px auto;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdb;
+  width: 60%; min-height: 100vh; max-height: 100%;
+}
+h2{
+  display: flex; justify-content: center;
+  padding-bottom: 30px;
+  font-weight: 900;
+  font-family:Verdana, Tahoma, sans-serif ;
+}
+img{
+  width: 30px; height: 30px;
+  animation: rotate 6s linear infinite;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#inpField {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+#inpField:focus {
+  border: 1.5px solid #848484;
+}
+#addButton {
+  width: 100px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#addButton:hover {
+  background-color: #45a049;
+}
+#addButton:focus {
+  outline: none;
+}
+#itemList {
+  margin-top: 14px;
+}
+#item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+#cp{
+  display: flex;
+}
+#actions{
+  width: 100px;
+  display: flex; justify-content: space-between;
+  font-weight: bold;
+}
+#actions span:nth-child(1){
+  color: #1b76ff;
+}
+#actions span:nth-child(1):hover{
+  cursor: pointer;
+}
+#actions span:nth-child(2){
+  color: red;
+}
+#actions span:nth-child(2):hover{
+  cursor: pointer;
+}
+#cb:checked + p{
+  text-decoration: line-through;
+  color: gray;
+}
+@media screen and (max-width : 600px){
+  .container{
+    width: 100%;
+  }
+}
